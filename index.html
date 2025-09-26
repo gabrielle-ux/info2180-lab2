@@ -12,9 +12,9 @@
             "header header"
             "main aside"
             "footer footer";
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: auto 1fr auto;
-        gap: 90px;
+        grid-template-columns: 3fr 350px;
+        grid-template-rows: auto 2fr auto;
+        gap: 30px;
     }
 
     header {
@@ -28,6 +28,11 @@
     header h1{
         font-size: 36px;
         font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .header-img{
+        margin-top: 30px;
+        border-radius: 50%;
     }
 
     main {
@@ -79,50 +84,59 @@
     }
 
     aside h3{
+        font-size: 20px;
         color: #48BB78;
+        margin-right: 500px;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    .about{
+    about {
+        display:block;
+        block-size: 250px;
         background-color: #E2E8F0;
-        padding: 15px;
-    }
-    img{
-        border-radius: 50%;
+        text-align:left;
     }
 
+    socialmedia a{
+        color:#2C5282;
+        text-decoration: none;
+    }
+
+    archives a{
+        color:#2C5282;
+        text-decoration: none;
+    }
     ul {
         list-style-type: none;
         padding: 0;
-        color: #2C5282;
     }
 
     li {
-        display: inline;      
-        margin-right: 15px;   
+        display:grid;      
+        text-align: left;
     }
  </style>
 </head>
 <body>
 <div class="container">
  <header>
+ <img src="IMG_1071.jpg" alt="Profile photo" width="150" height="200" class="header-img"/>
  <h1>Gabrielle Blythe</h1>
  <p>Upcoming Web developer and designer</p>
- <img src="IMG_1071.jpg" alt="Profile photo" width="150" height="200"/>
  </header>
  <main>
     <article>
         <h2> Welcome </h2>
+        <h6>Sept 25 2025 by Gabrielle</h6>
         <img src="blogimg1.jpeg" alt="blog photo1" width="150" height="100" class="post-img"/>
         <p>Thank you so much for showing interest in my lifestyle blog. This blog will reflect my day to day life as an intern at MITS working on projects as an undergraduate student studying computer science and managing studies, all this while managing a job as a swim instructor during my free time.</p>
-        <h6>Sept 25 2025 by Gabrielle</h6>
     </article>
 
     <article>
         <h2> A Blog? </h2>
+        <h6>Sept 25 2025 by Gabrielle</h6>
         <img src="IMG_2470.jpeg" alt="blog photo2" width="150" height="130" class="post-img2"/>
         <p>We will start by discussing why i decided on writing a blog. The short of it all is i wanted to encourage young women to do it all without any sacrfices. You can have a family, you can have the love and you can have the career.</p>
-        <h6>Sept 25 2025 by Gabrielle</h6>
     </article>
  </main>
  <aside>
@@ -131,13 +145,12 @@
     <p>This blog serves as a daily lifestyle blog of a young female webdeveloper with side hustles with hope of inspiring young women everywhere.</p>
    </about>
    <socialmedia>
-    <h3> Stay Connected </h3>
+    <h3> Socials </h3>
   <ul>
     <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
     <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
   </ul>
    </socialmedia>
-
    <archives>
     <h3> Archives </h3>
   <ul>
