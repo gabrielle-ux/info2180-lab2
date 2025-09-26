@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>INFO2180 Lab 2</title>
+ <link rel="stylesheet" href="styles.css">
+ <style>
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 90px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #63B3ED;
+        color: #FFFFFF;
+
+        
+    }
+
+    header h1{
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #2C5282;
+        color: #FFFFFF;
+    }
+
+    article{
+        text-align: left;
+        margin-bottom: 90px;
+    }
+    
+    .post-meta{
+        color:gray;
+    }
+    .post-img{
+        float:left;
+        margin-right:40px;
+    }
+
+    article h2{
+        font-size: 32px;
+        color: #48BB78;
+    }
+
+    .post-img2{
+        float:right;
+        margin-left: 40px;
+    }
+
+    article h6{
+        color: #718096;
+    }
+
+    body {
+        text-align: center;
+        font-size: 18px;
+        color:#2D3748;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;  
+    }
+
+    aside h3{
+        color: #48BB78;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .about{
+        background-color: #E2E8F0;
+        padding: 15px;
+    }
+    img{
+        border-radius: 50%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        color: #2C5282;
+    }
+
+    li {
+        display: inline;      
+        margin-right: 15px;   
+    }
+ </style>
+</head>
+<body>
+<div class="container">
+ <header>
+ <h1>Gabrielle Blythe</h1>
+ <p>Upcoming Web developer and designer</p>
+ <img src="IMG_1071.jpg" alt="Profile photo" width="150" height="200"/>
+ </header>
+ <main>
+    <article>
+        <h2> Welcome </h2>
+        <img src="blogimg1.jpeg" alt="blog photo1" width="150" height="100" class="post-img"/>
+        <p>Thank you so much for showing interest in my lifestyle blog. This blog will reflect my day to day life as an intern at MITS working on projects as an undergraduate student studying computer science and managing studies, all this while managing a job as a swim instructor during my free time.</p>
+        <h6>Sept 25 2025 by Gabrielle</h6>
+    </article>
+
+    <article>
+        <h2> A Blog? </h2>
+        <img src="IMG_2470.jpeg" alt="blog photo2" width="150" height="130" class="post-img2"/>
+        <p>We will start by discussing why i decided on writing a blog. The short of it all is i wanted to encourage young women to do it all without any sacrfices. You can have a family, you can have the love and you can have the career.</p>
+        <h6>Sept 25 2025 by Gabrielle</h6>
+    </article>
+ </main>
+ <aside>
+   <about>
+    <h3>About</h3>
+    <p>This blog serves as a daily lifestyle blog of a young female webdeveloper with side hustles with hope of inspiring young women everywhere.</p>
+   </about>
+   <socialmedia>
+    <h3> Stay Connected </h3>
+  <ul>
+    <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
+    <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+  </ul>
+   </socialmedia>
+
+   <archives>
+    <h3> Archives </h3>
+  <ul>
+    <li><a href="#">September 2025</a></li>
+    <li><a href="#">August 2025</a></li>
+    <li><a href="#">July 2025</a></li>
+    <li><a href="#">June 2025</a></li>
+  </ul>
+   </archives>
+ </aside>
+ <footer>
+ <p>Copyright &copy; 2024, Gabrielle Blythe</p>
+ </footer>
+</div>
+</body>
+</html>
